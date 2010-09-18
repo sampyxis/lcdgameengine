@@ -26,6 +26,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 // some of this code was written by <cstone@pobox.com> originally; it is in the public domain.
 */
 
+#ifndef lcd_engine_h
+#define lcd_engine_h
 #include <WProgram.h>
 
 #define swap(a, b) { uint8_t t = a; a = b; b = t; }
@@ -117,3 +119,5 @@ class lcd_engine {
 
   //uint8_t buffer[128*64/8]; 
 };
+
+#endif
